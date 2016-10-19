@@ -42,9 +42,15 @@ var Articles = {
 
     supprimer: function (req, res) {
         User.findOne({titre: req.body.titre}, function(err, article) {
-
+            console.log('Article supprimer');
         });
 
+    },
+
+    rechercheArticles: function (req, res) {
+        A.findOne({titre: req.body.titre}, function(err, article) {
+            res.render('views/index', {title: "article", article: article});
+        });
     },
 };
 

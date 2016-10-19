@@ -4,11 +4,11 @@ var users = require('../controllers/Users');
 
 router.get('/', users.index);
 router.post('/create', users.inscription);
-router.post('/create', users.connexion);
+router.get('/', users.connexion);
 router.put('/:id', users.modifier);
 router.get('/:id', users.afficherModification);
 router.delete('/:id(\\d+)', users.supprimer);
-
+router.get('/:id', users.rechercheUsers);
 
 module.exports = router;
 

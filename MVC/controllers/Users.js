@@ -61,9 +61,15 @@ var Users = {
 
     supprimer: function (req, res) {
         User.findOne({email: req.body.email, password: req.body.password}, function(err, user) {
-
+            console.log('User supprimer');
         });
 
+    },
+
+    rechercheUsers: function (req, res) {
+        A.findOne({email: req.body.email}, function(err, user) {
+          res.render('views/index', {title: "users", users: users});  
+        });
     },
 
      
