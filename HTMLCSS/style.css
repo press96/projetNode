@@ -1,0 +1,85 @@
+#blockfond{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	border: 5% red solid;
+}
+#login{
+	background-color: white;
+	border: 1px red solid;
+	width: 25%;
+	height: 10%;
+	position: relative;
+	top: 10%;
+	left: 75%;
+	color: red;
+	position: relative;
+	text-align: center;
+}
+#entete{
+	background-color: white;
+	width: 100%;
+	height: 5%;
+	top: 10%;
+	left: 0%;
+	border: 5% red solid;
+	position: relative;
+	text-align: center;
+}
+#m1{
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	border: 5% red solid;
+	color: red;
+	position: relative;
+	text-align: center;
+}
+#m2{
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	top: -100%;
+	left: 25%;
+	border: 5% red solid;
+	color: red;
+	position: relative;
+	text-align: center;
+}
+#m3{
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	top: -200%;
+	left: 50%;
+	border: 5% red solid;
+	color: red;
+	position: relative;
+	text-align: center;
+}
+#m4{
+	background-color: white;
+	width: 25%;
+	height: 100%;
+	top: -300%;
+	left: 75%;
+	border: 5% red solid;
+	color: red;
+	position: relative;
+	text-align: center;
+}
+#recherche{
+	background-color: red;
+	width: 70%;
+	height: 10%;
+	top: 50%;
+	left: 15%;
+	border: 5% red solid;
+	color: red;
+	position: relative;
+	text-align: center;
+}

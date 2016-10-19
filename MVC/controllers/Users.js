@@ -14,12 +14,15 @@ var Users = {
         });
     },
 
-    create: function (req, res) {
+    inscription: function (req, res) {
 
         var u = new User({
 
+            nom: req.body.nom,
+            prenom: req.body.prenom,
             pseudo: req.body.pseudo,
             email: req.body.email,
+            password: req.body.password,
         });
 
         u.save(function (err) {
@@ -32,7 +35,15 @@ var Users = {
         
     },
 
-    update: function (req, res) {
+    connexion: function (req, res) {
+        User.findOne({email: req.body.email, password: req.body.password}, function (err, user) {
+            if (err) throw err;
+            res.render('view/index', {title: "user", user: user});
+        });
+
+    },
+
+    modifier: function (req, res) {
         User.find({}, function (err, users) {
             if (err) throw err;
             res.render('views/index', {title: "users", users: users});
@@ -40,7 +51,7 @@ var Users = {
         
     },
 
-    updateView: function (req, res) {
+    afficherModification: function (req, res) {
         User.find({}, function (err, users) {
             if (err) throw err;
             res.render('views/index', {title: "users", users: users});
@@ -48,9 +59,14 @@ var Users = {
         
     },
 
-    delete: function (req, res) {
+    supprimer: function (req, res) {
+        User.findOne({email: req.body.email, password: req.body.password}, function(err, user) {
 
-    }
+        });
+
+    },
+
+     
 };
 
 module.exports = Users;
