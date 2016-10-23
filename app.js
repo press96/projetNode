@@ -57,4 +57,14 @@ app.use(function(err, req, res, next) {
 });
 
 
+//Connexion à la base de donnée :
+var mongoose = require('mongoose');
+
+mongoose.Promise = global.Promise;
+
+mongoose.connect('mongodb://localhost/projetNode', function(err) {
+  if (err) { throw err; }
+}); 
+
+
 module.exports = app;
