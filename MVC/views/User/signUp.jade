@@ -1,0 +1,24 @@
+//localhost:3000/users/signUp
+extends ../layout
+block content
+
+    center
+      form(action='/users/create', method='post')
+        p
+        | Nom : 
+        input(type='text', placeholder='nom', name="nom")
+        p
+        | 	Prenom : 
+        input(type='text', placeholder='prenom', name="prenom")
+        p
+        | 	Pseudo : 
+        input(type='text', placeholder='pseudo', name="pseudo")
+        p
+        |   Email : 
+        input(type='email', placeholder='E mail', name="email")
+        p
+        |   Mot de passe : 
+        input(type='password', placeholder='mot de passe', name="password")
+        p
+        button(type='submit')  inscription 
+

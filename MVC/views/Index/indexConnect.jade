@@ -1,0 +1,15 @@
+//localhost:3000/indexConnect
+extends ../layout
+block content
+
+	center
+		h1 Hello Word UserConnect
+		p
+		a.btn.btn-info(href='/users/emailProfile', role='button')  votre Profile
+		p
+		a.btn.btn-info(href='/articles/newArticle', role='button')  cree un Article
+		p
+		form(action='index/recherche', method='post')
+			input(type='text', placeholder='recherche', name="recherche")
+			p
+			button(type='submit')  recherche

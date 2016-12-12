@@ -1,0 +1,10 @@
+//localhost:3000/users/signIn
+extends ../layout
+block content
+
+    form(action='/users/login', method='post')
+      input(type='email', placeholder='adress e-mail', name="email")
+      | &#x9;
+      input(type='password', placeholder='mot de passe', name="password")
+      | &#x9;
+      button(type='submit')  connexion  

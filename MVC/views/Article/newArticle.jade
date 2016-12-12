@@ -1,0 +1,23 @@
+//localhost:3000/articles/newArticle
+extend ../layout
+block content
+
+	center
+		form(action='/articles/create', method='post')
+			p
+			| Nom de l'Article:
+			input#titre(name='titre', type='text', required='true', value='', placeholder="Nom de l'Article")
+			p
+			| pseudo :
+			input#pseudo(name='pseudo', type='text', required='true', value='', placeholder='Votre Pseudo')
+			p
+			
+
+			textarea#articlesDescription(name='articlesDescription', rows='5', cols='50', required='true', value='', placeholder='ecrire votre article dans le champ')
+			p
+			.form-group
+				label.control-label.col-sm-2(for='L') Image :
+					.Image
+						input(type='file', name='displayImage')
+
+			button(type='submit')  Valide

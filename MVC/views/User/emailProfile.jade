@@ -1,0 +1,14 @@
+//localhost:3000/users/emailProfile
+extends ../layout
+block content
+
+    center
+      form(action='/users/update', method='post')
+        p
+        |   Email : 
+        input(type='email', placeholder='E mail', name="email")
+        p
+        |   Mot de passe : 
+        input(type='password', placeholder='mot de passe', name="password")
+        p
+        button(type='submit')  validation de votre identiter 

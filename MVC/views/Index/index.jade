@@ -1,0 +1,15 @@
+//localhost:3000/
+extends ../layout
+block content
+
+	center
+		h1 Hello Word Index
+		form(action='/search', method='post')
+			p
+			input(type='text', placeholder='recherche', name="recherche")
+			p
+			button(type='submit')  recherche
+		p
+		<a href="/users/signUp" class="btn btn-info" role="button"> Inscription </a>
+		p
+		<a href="/users/signIn" class="btn btn-info" role="button"> Connexion </a>
